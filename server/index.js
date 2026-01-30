@@ -11,6 +11,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+console.log(process.env.PORT);
 app.get("/", (req, res) => {
   res.send("Backend running");
 });
